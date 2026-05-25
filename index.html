@@ -2,13 +2,68 @@
 <html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>تحذير أمني</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبيه أمني هام</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            border-top: 8px solid #dc3545;
+        }
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        h1 {
+            color: #dc3545;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 1px solid #ffeeba;
+            margin-top: 25px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
-<body style="text-align:center; padding:50px; font-family:Arial, sans-serif; background-color:#f4f4f9;">
-    <h1 style="color:#d9534f;">🚨 انتبه! لقد فتحت رابطاً مشبوهاً 🚨</h1>
-    <p style="font-size:20px; font-weight:bold;">هذا الرابط مجرد اختبار لرفع الوعي الأمني.</p>
-    <p style="font-size:18px;">الرسائل التي تعدك بربح 300 دولار أو 400 دولار على الواتساب هي فخ لسرقة بياناتك أو اختراق جهازك.</p>
-    <p style="font-size:16px; color:#555;">احذف الرسالة فوراً ولا تقم بإعادة توجيهها لأي شخص.</p>
+<body>
+    <div class="card">
+        <div class="icon">🚨</div>
+        <h1>انتبه! الرابط الي فتحتو كان فيي اسرق بياناتك من خلالو</h1>
+        <p><strong>هالموقع عبارة عن تجربة توعوية لرفع مستوى الحذر الرقمي.</strong></p>
+        <p>الرسائل الشائعة على الواتساب مثل "اضغط واربح 300 دولار" هي أساليب هندسة اجتماعية مضللة تهدف لسرقة البيانات أو اختراق الأجهزة.</p>
+        <div class="highlight">تجنب فتح الروابط المجهولة، واحذف هيك رسائل فوراً.</div>
+    </div>
 </body>
 </html>
